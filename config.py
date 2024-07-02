@@ -15,7 +15,7 @@ CONFLUENCE_API_KEY = os.environ['CONFLUENCE_PRIVATE_API_KEY']
 CONFLUENCE_SPACE_KEY = os.environ['CONFLUENCE_SPACE_KEY']
 # Hint: space_key and page_id can both be found in the URL of a page in Confluence
 # https://yoursite.atlassian.com/wiki/spaces/<space_key>/pages/<page_id>
-#https://github.com/BastinFlorian/RAG-Chatbot-with-Confluence/blob/main/src/help_desk.py
+# https://github.com/BastinFlorian/RAG-Chatbot-with-Confluence/blob/main/src/help_desk.py
 CONFLUENCE_USERNAME = os.environ['EMAIL_ADRESS']
 PATH_NAME_SPLITTER = './splitted_docs.jsonl'
 PERSIST_DIRECTORY = './db/chroma/'
