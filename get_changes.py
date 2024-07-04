@@ -17,6 +17,18 @@ def get_last_modified_pages_in_last_x_days(x):
     # Construct the URL for the CQL search
     url = f'https://{domain}/wiki/rest/api/content/search'
     cql = f'lastModified > "{x_days_ago}"'
+    # title ~ "\"SSA Arret\"" # Find content where the title contains the exact phrase "SSA Arret"
+    # text ~ Confluence # find content that contains the word Confluence 
+    # Search for content of a particular type (page, blog..)
+    # type IN (blogpost, page) # Find blogposts or pages
+    # type = attachemnts # Find attachments
+    # lastModified >= now("-2w")
+    # space = DEV # Find content in DEV space
+    # created >= now("-4w")
+    # label = "performance" 
+    # type = "blogpost"
+
+
     params = {
         'cql': cql,
         'expand': 'history,body.storage'
